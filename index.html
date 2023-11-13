@@ -18,16 +18,16 @@
     <title>dashboard</title>
 </head>
 <body>
-    <nav class="nav justify-content-between align-items-center position-fixed row">
-        <div class="col-1">
+    <nav class="nav justify-content-between align-items-center position-fixed d-flex">
+        <div class="logo">
             <img src="img/logo.svg" alt="logo" style="width: 100%;">
         </div>
-        <div class="col-10 d-flex align-items-center">
+        <div class="search d-flex align-items-center">
             <div class="mb-3"></div>
                 <input type="search" class="form-control" placeholder="search">
             </div>
         </div>
-        <div class="col-1 d-flex justify-content-around">
+        <div class="options d-flex justify-content-around">
             <i class="fa-solid fa-list-ul"></i>
             <i class="fa-solid fa-circle-question"></i>
             <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -62,6 +62,54 @@
                 </div>
             </div>
 
+            <div class="main-content d-column flex-grow-1 position-absolute bottom-0 end-0 overflow-auto color-white">
+                <div class="info-students row">
+                    <div class="title col-lg-6">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex align-items-center">
+                                <h1 class="display-6">Boolean</h1>
+                                <div class="percorso d-flex align-items-center justify-content-center">
+                                    <span>Piano blaze</span>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="percorso d-flex align-items-center justify-content-center">
+                                    <span>3 app</span>
+                                </div>
+
+                                <i class="fa-solid fa-angles-right" style="font-size: 0.7em;display: flex;align-items: center;"></i>
+
+                                <div class="percorso d-flex align-items-center justify-content-center">
+                                    <span>Boolean mobile app</span>
+                                </div>
+                                <div class="percorso d-flex align-items-center justify-content-center">
+                                    <span>Boolean web app</span>
+                                </div>
+                                <div class="percorso d-flex align-items-center justify-content-center">
+                                    <span>Boolean blog app</span>
+                                </div>
+
+                                <div class="percorso d-flex align-items-center justify-content-center d-none">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="students col-lg-3">
+                        <h5 class="small-font">Studenti online negli ultimi 30 minunti</h5>
+                        <h3>125</h3>
+                    </div>
+                    <div class="add-students col-lg-3 d-flex">
+                        <div class="d-flex align-items-center" style="height: 35px;">
+                            <h5 class="small-font">Nuovo studente</h5>  
+                            <div class="plus-student d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
