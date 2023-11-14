@@ -20,7 +20,8 @@
 <body>
     <nav class="nav justify-content-between align-items-center position-fixed d-flex">
         <div class="logo">
-            <img src="img/logo.svg" alt="logo" style="width: 100%;">
+            <img src="img/logo.svg" alt="logo" style="width: 100%;" class="big-logo">
+            <img src="img/mobile-logo.png" alt="mob-logo" class="d-none small-logo" style="width: 50px;">
         </div>
         <div class="search d-flex align-items-center">
             <div class="mb-3"></div>
@@ -28,9 +29,9 @@
             </div>
         </div>
         <div class="options d-flex justify-content-around">
-            <i class="fa-solid fa-list-ul"></i>
-            <i class="fa-solid fa-circle-question"></i>
-            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <i class="fa-solid fa-list-ul hide-icons"></i>
+            <i class="fa-solid fa-circle-question hide-icons"></i>
+            <i class="fa-solid fa-ellipsis-vertical hide-icons"></i>
             <i class="fa-solid fa-bell" style="color: #ff8f00;"></i>
         </div>
     </nav>
@@ -50,7 +51,7 @@
                         <i class="fa-solid fa-gear"></i>
                     </div>
                 </div>
-                <div class="options h-100 d-flex flex-column justify-content-between">
+                <div class="options-menu h-100 d-flex flex-column justify-content-between">
                     <div class="display-menu d-flex flex-column justify-content-around">
                         <span>Home</span>
                         <span>Stats</span>
@@ -69,28 +70,30 @@
                         <div class="d-flex flex-column">
                             <div class="d-flex align-items-center">
                                 <h1 class="display-6">Boolean</h1>
-                                <div class="percorso d-flex align-items-center justify-content-center">
+                                <div class="percorso d-flex align-items-center justify-content-center" style="width: 63px;">
                                     <span>Piano blaze</span>
                                 </div>
                             </div>
                             <div class="d-flex">
-                                <div class="percorso d-flex align-items-center justify-content-center">
+                                <div class="percorso d-flex align-items-center justify-content-center persorso-normale">
                                     <span>3 app</span>
                                 </div>
 
                                 <i class="fa-solid fa-angles-right" style="font-size: 0.7em;display: flex;align-items: center;"></i>
 
-                                <div class="percorso d-flex align-items-center justify-content-center">
-                                    <span>Boolean mobile app</span>
-                                </div>
-                                <div class="percorso d-flex align-items-center justify-content-center">
-                                    <span>Boolean web app</span>
-                                </div>
-                                <div class="percorso d-flex align-items-center justify-content-center">
-                                    <span>Boolean blog app</span>
+                                <div class="percorso-normale d-flex">
+                                    <div class="percorso d-flex align-items-center justify-content-center">
+                                        <span>Boolean mobile app</span>
+                                    </div>
+                                    <div class="percorso d-flex align-items-center justify-content-center">
+                                        <span>Boolean web app</span>
+                                    </div>
+                                    <div class="percorso d-flex align-items-center justify-content-center">
+                                        <span>Boolean blog app</span>
+                                    </div>
                                 </div>
 
-                                <div class="percorso d-flex align-items-center justify-content-center d-none">
+                                <div class="percorso d-flex align-items-center justify-content-center d-none percorso-responsive">
                                     <i class="fa-solid fa-plus"></i>
                                 </div>
                             </div>
@@ -114,7 +117,7 @@
 
                     <div class="classrooms col-12 col-lg-8">
 
-                        <div class="class-list">
+                        <div class="faq">
                             <div>
                                 <div class="title-list">
                                     <h2>Prossime classi</h2>
@@ -124,8 +127,8 @@
                                         <thead>
                                             <tr>
                                                 <th>Nome</th>
-                                                <th>Data inizio</th>
-                                                <th>ROI</th>
+                                                <th class="hide-col">Data inizio</th>
+                                                <th class="hide-col">ROI</th>
                                                 <th>Stato</th>
                                                 <th style="text-align: center;">azioni</th>
                                             </tr>
@@ -141,8 +144,8 @@
                                                     </div>
                                                     
                                                 </td>
-                                                <td><span>15 feb 2021</span></td>
-                                                <td><span>20%</span></td>
+                                                <td class="hide-col"><span>15 feb 2021</span></td>
+                                                <td class="hide-col"><span>20%</span></td>
                                                 <td>
                                                     <div class="status d-flex align-items-center justify-content-center color-white">
                                                         <span>done</span>
@@ -169,8 +172,8 @@
                                                     </div>
                                                     
                                                 </td>
-                                                <td><span>15 feb 2021</span></td>
-                                                <td><span>20%</span></td>
+                                                <td class="hide-col"><span>15 feb 2021</span></td>
+                                                <td class="hide-col"><span>20%</span></td>
                                                 <td>
                                                     <div class="status d-flex align-items-center justify-content-center color-white">
                                                         <span>done</span>
@@ -197,8 +200,8 @@
                                                     </div>
                                                     
                                                 </td>
-                                                <td><span>15 feb 2021</span></td>
-                                                <td><span>20%</span></td>
+                                                <td class="hide-col"><span>15 feb 2021</span></td>
+                                                <td class="hide-col"><span>20%</span></td>
                                                 <td>
                                                     <div class="status d-flex align-items-center justify-content-center color-white">
                                                         <span>Done</span>
@@ -225,8 +228,8 @@
                                                     </div>
                                                     
                                                 </td>
-                                                <td><span>15 feb 2021</span></td>
-                                                <td><span>20%</span></td>
+                                                <td class="hide-col"><span>15 feb 2021</span></td>
+                                                <td class="hide-col"><span>20%</span></td>
                                                 <td>
                                                     <div class="status d-flex align-items-center justify-content-center color-white">
                                                         <span>done</span>
@@ -253,8 +256,8 @@
                                                     </div>
                                                     
                                                 </td>
-                                                <td><span>15 feb 2021</span></td>
-                                                <td><span>20%</span></td>
+                                                <td class="hide-col"><span>15 feb 2021</span></td>
+                                                <td class="hide-col"><span>20%</span></td>
                                                 <td>
                                                     <div class="status d-flex align-items-center justify-content-center color-white">
                                                         <span>done</span>
@@ -281,8 +284,8 @@
                                                     </div>
                                                     
                                                 </td>
-                                                <td><span>15 feb 2021</span></td>
-                                                <td><span>20%</span></td>
+                                                <td class="hide-col"><span>15 feb 2021</span></td>
+                                                <td class="hide-col"><span>20%</span></td>
                                                 <td>
                                                     <div class="status d-flex align-items-center justify-content-center color-white">
                                                         <span>done</span>
@@ -361,13 +364,13 @@
                                     <h5>Utenti attivi</h5>
                                     <p>Lista degli utenti attivi in piattaforma negli ultimi mesi</p>
                                 </div>
-                                <div>
+                                <div class="d-flex align-items-center">
                                     <span>Gennaio:1200</span>
                                 </div>
-                                <div>
+                                <div class="d-flex align-items-center">
                                     <span>Febbrario:800</span>
                                 </div>
-                                <div style="border-bottom: unset;">
+                                <div class="d-flex align-items-center" style="border-bottom: unset;">
                                     <span>marzo:1500</span>
                                 </div>
                             </div>
