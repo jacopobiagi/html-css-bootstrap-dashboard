@@ -67,7 +67,7 @@
     background-color: rgb(27, 114, 232);
     min-height: 100px;
     padding-top: 10px;
-    --bs-gutter-x: 0;
+   /* --bs-gutter-x: 0;*/
 }
 
 .percorso{
@@ -98,7 +98,7 @@
 .main-container{
     width: 100%;
     height: 100%;
-    --bs-gutter-x: 0;
+    /*--bs-gutter-x: 0;*/
 }
 
 .classrooms{
@@ -113,24 +113,89 @@
 
 .class-list{
     width: 100%;
-    min-height: 500px;
-    background-color: orange;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .faq{
     width: 100%;
-    min-height: 150px;
-    background-color: blue;
+    background-color: white;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 0.8em;
 }
 
 .checkbox-list{
     width: 100%;
-    min-height: 150px;
-    background-color: blueviolet;
 }
 
 .statistiche{
     width: 100%;
     min-height: 500px;
     background-color: palevioletred;
+}
+
+.title-list{
+    background-color: rgb(247, 247, 247);
+    border-bottom: 1px solid black;
+}
+
+.html-icon{
+    width: 23px;
+    height: 23px;
+    background-color: rgb(242, 101, 81);
+    border-radius: 20px;
+    margin-right: 5px;
+    font-size: 0.8em;
+}
+
+.status{
+    font-size: small;
+    width: 35px;
+    border-radius: 20px;
+    background-color: green;
+}
+
+.stato-button{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(108, 117, 125);
+    border-radius: 7px;
+    margin: 0 5px;
+    font-size: 0.8em;
+    color: rgb(108, 117, 125);
+}
+
+hr{
+    margin-top: 0;
+}
+
+.list-container{
+    background-color: white;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+.list-content{
+    border: 1px solid rgb(111, 110, 110);
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+}
+
+.content-stats{
+    margin: 5px;
+    padding-top: 10px;
+    border: 1px solid rgb(108, 117, 125);
+    border-radius: 5px;
+    font-size: 0.8em!important;
+}
+
+.content-stats > div{
+    min-height: 30px;
+    border-bottom: 1px solid black;
 }
